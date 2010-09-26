@@ -1,10 +1,14 @@
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+if [ -n `which brew` ]; then
 
-export PATH=`brew --prefix`/bin:$PATH
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+  fi
+  source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
 
-if [ -x python ]; then
-  export PATH=$PATH:"`brew --prefix`/Cellar/python/2.7/bin/"
+  export PATH=`brew --prefix`/bin:$PATH
+
+  if [ -n `which python` ]; then
+    export PATH=$PATH:"`brew --prefix`/Cellar/python/2.7/bin"
+  fi
+
 fi
