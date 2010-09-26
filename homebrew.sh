@@ -3,3 +3,8 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
 
+export PATH=`brew --prefix`/bin:$PATH
+
+if [ -x python ]; then
+  export PATH=$PATH:"`brew --prefix`/Cellar/python/2.7/bin/"
+fi
