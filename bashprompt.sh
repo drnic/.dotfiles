@@ -16,6 +16,9 @@ function parse_git_branch {
 }
 export PS1='\w$(parse_git_branch)$ '
 
+
+
+# RVM - disabled
 function __my_rvm_ruby_version {
   local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
   [ "$gemset" != "" ] && gemset="@$gemset"
@@ -68,5 +71,5 @@ bash_prompt() {
 # PS1="\$(~/.rvm/bin/rvm-prompt i) $PS1"
 # rvm default rbx-head
 
-bash_prompt
-unset bash_prompt
+# bash_prompt
+# unset bash_prompt
