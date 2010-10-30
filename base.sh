@@ -10,6 +10,7 @@ source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/git.sh
 source ~/.dotfiles/heroku.sh
 source ~/.dotfiles/misc.sh
+source ~/.dotfiles/functions.sh
 
 source ~/.dotfiles/bashprompt.sh
 
