@@ -24,4 +24,6 @@ if [ -n `which git` ]; then
     done
   }
 
+  alias gpb="git push banana master && hudson build"
+  
 fi
