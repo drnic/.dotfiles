@@ -61,3 +61,7 @@ function prompt_color() { # bjeanes
     fi
   fi
 }
+
+function wiki() {
+  dig +short txt $1.wp.dg.cx
+}

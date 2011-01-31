@@ -13,6 +13,7 @@ source ~/.dotfiles/heroku.sh
 source ~/.dotfiles/mysql.sh
 source ~/.dotfiles/misc.sh
 source ~/.dotfiles/functions.sh
+[[ -s ~/.dotfiles/development_setups.sh ]] && source ~/.dotfiles/development_setups.sh
 
 source ~/.dotfiles/bashprompt.sh
 
