@@ -19,3 +19,5 @@ source ~/.dotfiles/bashprompt.sh
 
 # Last
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+rvm 1.8.7
+echo "Using "`ruby -v`
