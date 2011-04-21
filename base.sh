@@ -12,7 +12,7 @@ source ~/.dotfiles/git.sh
 source ~/.dotfiles/heroku.sh
 source ~/.dotfiles/mysql.sh
 source ~/.dotfiles/misc.sh
-source ~/.dotfiles/npm.sh
+source ~/.dotfiles/node.sh
 source ~/.dotfiles/engineyard.sh
 source ~/.dotfiles/ronin.sh
 source ~/.dotfiles/functions.sh
