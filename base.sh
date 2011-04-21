@@ -22,6 +22,6 @@ source ~/.dotfiles/bashprompt.sh
 
 # Last
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-rvm 1.8.7
-rvm gemset use 1.8.7@global
+rvm 1.9.2
+# rvm gemset use 1.9.2@global
 echo "Using "`ruby -v`
