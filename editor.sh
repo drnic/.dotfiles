@@ -6,7 +6,15 @@ function use_textmate () {
   alias tm_dialog=~/"Library/Application\ Support/TextMate/PlugIns/Dialog.tmplugin/Contents/Resources/tm_dialog"
 }
 
+function use_redcar_gem () {
+  export EDITOR_NAME="redcar"
+  export EDITOR="redcar -w"
+  export GEM_OPEN_EDITOR="redcar"
+  alias et="redcar ."
+}
+
 function use_redcar () {
+  export PATH="/Users/drnic/Projects/ruby_apps/redcar/bin:$PATH"
   export EDITOR_NAME="redcar"
   export EDITOR="redcar -w"
   export GEM_OPEN_EDITOR="redcar"
@@ -15,9 +23,9 @@ function use_redcar () {
 
 function m {
   if [ "$1" != "" ]; then
-    $EDITOR_NAME $1
+    $EDITOR $1
   else
-    $EDITOR_NAME .
+    $EDITOR .
   fi
 }
 
