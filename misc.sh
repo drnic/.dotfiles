@@ -3,7 +3,7 @@ ulimit -n 6000
 
 alias ll='ls -lah'
 
-alias eprof='mate ~/.dotfiles/' # because i edit my bash_profile a lot with new things
+alias eprof='$EDITOR_NAME ~/.dotfiles/' # because i edit my bash_profile a lot with new things
 alias sprof='source ~/.bash_profile' # same as previous, after editing you have to source it for the new stuff to work
 alias publickey='cat ~/.ssh/id_dsa.pub | pbcopy'
 

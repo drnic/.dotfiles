@@ -4,7 +4,7 @@ if [ -n `which git` ]; then
   alias gl='git pull'
   alias gp='git push'
   alias gpa='git push-all' # see [alias] in ~/.gitconfig
-  alias gd='git diff | mate'
+  alias gd='git diff --no-color | $EDITOR'
   alias ga='git add'
   alias gcl='git config --list'
   alias gc='git commit -v'

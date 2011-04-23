@@ -11,15 +11,6 @@ function o {
   fi
 }
 
-# If no arguments are supplied open the current folder with TextMate
-function m {
-  if [ "$1" != "" ]; then
-    mate $1
-  else
-    et
-  fi
-}
-
 # Display a random hint
 function hint {
   fn=~/.dotfiles/lib/hints.txt
