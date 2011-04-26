@@ -23,8 +23,6 @@ else
   use_textmate
 fi
 
-alias et="$EDITOR ."
-
 function m {
   if [ "$1" != "" ]; then
     $EDITOR $1
@@ -32,3 +30,6 @@ function m {
     $EDITOR .
   fi
 }
+
+alias et="m" # my brain still likes to type 'et' to get a text editor
+
