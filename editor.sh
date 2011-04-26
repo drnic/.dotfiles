@@ -15,6 +15,7 @@ function use_redcar_dev () {
   export GEM_OPEN_EDITOR="redcar"
 }
 
+# don't try to run redcar if jruby not installed
 if rvm list strings | grep jruby > /dev/null
 then
   use_redcar_dev
