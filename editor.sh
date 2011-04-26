@@ -1,25 +1,28 @@
 function use_textmate () {
-  export EDITOR_NAME="mate"
   export EDITOR="/usr/local/bin/mate -w"
   export GEM_OPEN_EDITOR="/usr/local/bin/mate"
-  alias et="mate ."
   alias tm_dialog=~/"Library/Application\ Support/TextMate/PlugIns/Dialog.tmplugin/Contents/Resources/tm_dialog"
 }
 
 function use_redcar_gem () {
-  export EDITOR_NAME="redcar"
-  export EDITOR="redcar -w"
+  export EDITOR="rvm jruby exec redcar -w"
   export GEM_OPEN_EDITOR="redcar"
-  alias et="redcar ."
 }
 
-function use_redcar () {
+function use_redcar_dev () {
   export PATH="/Users/drnic/Projects/ruby_apps/redcar/bin:$PATH"
-  export EDITOR_NAME="redcar"
-  export EDITOR="redcar -w"
+  export EDITOR="rvm jruby exec redcar -w"
   export GEM_OPEN_EDITOR="redcar"
-  alias et="redcar ."
 }
+
+if rvm list strings | grep jruby > /dev/null
+then
+  use_redcar_dev
+else
+  use_textmate
+fi
+
+alias et="$EDITOR ."
 
 function m {
   if [ "$1" != "" ]; then
@@ -28,6 +31,3 @@ function m {
     $EDITOR .
   fi
 }
-
-
-use_redcar
