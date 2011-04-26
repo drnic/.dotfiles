@@ -16,7 +16,7 @@ function use_redcar_dev () {
 }
 
 # don't try to run redcar if jruby not installed
-if rvm list strings | grep jruby > /dev/null
+if rvm list strings | grep -q jruby
 then
   use_redcar_dev
 else
