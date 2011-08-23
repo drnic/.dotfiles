@@ -1,4 +1,3 @@
-export RUBYOPT="rubygems"
 export RBXOPT="-Xrbc.db -Xagent.start"
 
 function glg() {
