@@ -7,6 +7,7 @@ source ~/.dotfiles/editor.sh
 source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/git.sh
 source ~/.dotfiles/heroku.sh
+source ~/.dotfiles/opscode.sh
 source ~/.dotfiles/mysql.sh
 source ~/.dotfiles/misc.sh
 source ~/.dotfiles/node.sh
