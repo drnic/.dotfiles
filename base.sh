@@ -15,6 +15,8 @@ source ~/.dotfiles/engineyard.sh
 source ~/.dotfiles/ronin.sh
 source ~/.dotfiles/xcloud.sh
 source ~/.dotfiles/functions.sh
+
+export github_username="drnic"
 source ~/.dotfiles/seinfeld.sh/seinfeld.sh
 
 [[ -s ~/.dotfiles/development_setups.sh ]] && source ~/.dotfiles/development_setups.sh
