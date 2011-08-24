@@ -11,6 +11,7 @@ source ~/.dotfiles/opscode.sh
 source ~/.dotfiles/mysql.sh
 source ~/.dotfiles/misc.sh
 source ~/.dotfiles/node.sh
+source ~/.dotfiles/php.sh
 source ~/.dotfiles/engineyard.sh
 source ~/.dotfiles/ronin.sh
 source ~/.dotfiles/xcloud.sh
