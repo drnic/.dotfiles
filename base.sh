@@ -14,7 +14,7 @@ source ~/.dotfiles/node.sh
 source ~/.dotfiles/php.sh
 source ~/.dotfiles/engineyard.sh
 source ~/.dotfiles/ronin.sh
-source ~/.dotfiles/xcloud.sh
+source ~/.dotfiles/cloud_foundry.sh
 source ~/.dotfiles/functions.sh
 
 export github_username="drnic"
