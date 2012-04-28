@@ -10,5 +10,6 @@ if [ -n `which brew` ]; then
   if [ -n `which python` ]; then
     export PATH=$PATH:"`brew --prefix`/Cellar/python/2.7/bin"
   fi
+  
 
 fi

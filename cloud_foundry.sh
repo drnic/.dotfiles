@@ -1,4 +1,4 @@
-export MY_CLOUDFOUNDRY=ec2-107-20-0-25.compute-1.amazonaws.com
+export MY_CLOUDFOUNDRY=ec2-67-202-19-51.compute-1.amazonaws.com
 
 function ssh_cf () {
   ssh ubuntu@$MY_CLOUDFOUNDRY

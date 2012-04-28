@@ -1,8 +1,16 @@
 if [ -n `which git` ]; then
 
+  function gpx() {
+    if [ -n $(git config remote.origin.url | grep ssh://reviews) ]; then
+      gerrit push
+    else
+      git push
+    fi
+  }
+  
+  alias gp='git push'
   alias gst='git status'
   alias gl='git pull'
-  alias gp='git push'
   alias gpa='git push-all' # see [alias] in ~/.gitconfig
   alias gd='git diff --no-color | $EDITOR'
   alias ga='git add'
@@ -26,4 +34,8 @@ if [ -n `which git` ]; then
 
   alias gpb="git push banana master && hudson build"
   
+fi
+
+if [[ -n `which hub` ]]; then
+  eval "$(hub alias -s)"
 fi
